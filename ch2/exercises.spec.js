@@ -1,7 +1,22 @@
-import hello from './exercises.js';
+import Structure from './exercises.js';
 
-describe('hello func', () => {
-    it('should say hello', () => {
-        expect(hello()).toEqual('Hello World');
+let structure = new Structure();
+
+describe('drawTriangle', () => {
+    it('should say draw a triangle', () => {
+        expect(structure.drawTriangle()).toEqual(['#','##', '###', '####', '#####','######','#######'].join('\n'));
     });
+});
+
+describe('fizzBuzzer', () => {
+  xit('should print numbers', () => {
+    expect(structure.fizzBuzzer()).toEqual('');
+  });
+});
+
+describe('generateBoard', () => {
+  it('should print a board off odd length', () => {
+    expect(structure.generateBoard(3)).toEqual('');
+    expect(structure.generateBoard(8)).toEqual('');
+  });
 });
