@@ -1,5 +1,6 @@
 import HigherOrder from './exercises.js';
-// require './ancestry.js';
+import ANCESTRY_FILE from './ancestry.js';
+const ancestors = ANCESTRY_FILE;
 
 let hOrder = new HigherOrder;
 
@@ -13,6 +14,8 @@ describe('flatten function', () => {
   });
 });
 
-describe('', () => {
-
+describe('ageDiff function', () => {
+  it('should return the avg age of a mother when they had their child', () => {
+    expect(hOrder.ageDiff(ANCESTRY_FILE)).toEqual(31.2);
+  });
 });
