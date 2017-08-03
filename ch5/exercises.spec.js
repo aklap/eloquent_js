@@ -7,6 +7,10 @@ describe('flatten function', () => {
   it('should take a multidimensional array and return a flattened array with the elements', () => {
     expect(hOrder.flatten([1, 2, [3, 4, [5]]])).toEqual([1, 2, 3, 4, 5]);
   });
+
+  it('should return a 1 dimensional array and return it unchanged', () => {
+    expect(hOrder.flatten([1, 2, 3])).toEqual([1, 2, 3]);
+  });
 });
 
 describe('', () => {
