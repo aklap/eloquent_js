@@ -9,7 +9,7 @@ describe('flatten function', () => {
     expect(hOrder.flatten([1, 2, [3, 4, [5]]])).toEqual([1, 2, 3, 4, 5]);
   });
 
-  it('should return a 1 dimensional array and return it unchanged', () => {
+  it('should take a 1 dimensional array and return it unchanged', () => {
     expect(hOrder.flatten([1, 2, 3])).toEqual([1, 2, 3]);
   });
 });
